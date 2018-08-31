@@ -32,11 +32,8 @@ void IntroductionApp::shutdown()
 void IntroductionApp::draw()
 {
 	Gizmos::clear();	
-	Gizmos::addSphere(glm::vec3(0, 0, 0), 0.5f, 30, 30, glm::vec4(10, 0, 0, .5), &model);
-	glm::mat4 a = m_Camera->getWorldTransform();
-	glm::mat4 b = m_Camera->getView();
-	glm::mat4 c = m_Camera->getWorldTransform();
-	Gizmos::draw(m_Camera->getWorldTransform() * m_Camera->getView() * m_Camera->getProjection());
+	Gizmos::addSphere(glm::vec3(0, 0, 0), 5, 15, 10, glm::vec4(1, 0, 0, 1), &model);
+	Gizmos::draw(m_Camera->getWorldTransform() * m_Camera->getProjection() * m_Camera->getView());
 }
 
 void IntroductionApp::update(float dt)

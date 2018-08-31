@@ -7,7 +7,7 @@ class Camera
 {	
 
 protected:
-	glm::mat4 worldTransform = glm::mat4{ 0 };
+	glm::mat4 worldTransform = glm::mat4{ 1 };
 	glm::mat4 viewTransform;
 	glm::mat4 projectionTransform;
 	glm::mat4 projectionViewTransform;

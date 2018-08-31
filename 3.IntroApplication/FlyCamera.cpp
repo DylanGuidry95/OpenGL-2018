@@ -6,6 +6,7 @@
 
 FlyCamera::FlyCamera()
 {	
+	speed = 1;
 }
 
 void FlyCamera::update(float deltatime)
@@ -78,14 +79,14 @@ void FlyCamera::update(float deltatime)
 	//	worldTransform = newTransform.World;
 	//}
 	
-	if (glfwGetKey(window, GLFW_KEY_F))
+	/*if (glfwGetKey(window, GLFW_KEY_F))
 	{
 		glm::vec3 worldPos = glm::vec3(worldTransform[3].x, worldTransform[3].y, worldTransform[3].z);
 		setLookAt(worldPos, glm::vec3(0), glm::vec3(0, 1, 0));
-	}
+	}*/
 
-	viewTransform = glm::inverse(worldTransform);
-	projectionViewTransform = projectionTransform * viewTransform;
+	//viewTransform = glm::inverse(worldTransform);
+	//projectionViewTransform = projectionTransform * viewTransform;
 }
 
 void FlyCamera::setSpeed(float speed)

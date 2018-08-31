@@ -7,8 +7,8 @@
 Camera::Camera()
 {
 	worldTransform = glm::mat4(1);
-	//viewTransform = glm::lookAt(glm::vec3(10, 10, 10), glm::vec3(0), glm::vec3(0, 1, 0));
-	//projectionViewTransform = glm::perspective(glm::pi<float>() * .25f, 16 / 9.f, .1f, 1000.f);
+	viewTransform = glm::lookAt(glm::vec3(10, 10, 10), glm::vec3(0), glm::vec3(0, 1, 0));
+	projectionViewTransform = glm::perspective(glm::pi<float>() * .25f, 16 / 9.f, .1f, 1000.f);
 	m_fov = glm::pi<float>() * 0.25f;
 	m_aspectRatio = 16 / 9.0f;
 	m_near = 0.1f;

@@ -33,9 +33,6 @@ void Application::run(const char * title, unsigned int width, unsigned int heigh
 
 	startup();
 
-	m_Camera->setPosition(glm::vec3(0, 0, 0));
-	m_Camera->setSpeed(5);
-
 	float prevTime = glfwGetTime();
 
 	while(glfwWindowShouldClose(m_window) == false)

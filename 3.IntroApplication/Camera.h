@@ -28,4 +28,5 @@ public:
 	glm::mat4 getProjection();
 	glm::mat4 getProjectionView();
 	void updateProjetionViewTransform();
+	void setProjectionMatrix(glm::mat4 orthographic, float fieldOfView, float aspectRation, float near, float far);
 };

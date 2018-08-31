@@ -28,7 +28,7 @@ void Application::run(const char * title, unsigned int width, unsigned int heigh
 	auto minor = ogl_GetMinorVersion();
 
 
-	glClearColor(0, 0, 0, 1.f);
+	glClearColor(.5, .5, .5, 1.f);
 	glEnable(GL_DEPTH_TEST);
 
 	startup();
